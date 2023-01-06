@@ -4,7 +4,7 @@ import 'package:testapp/routes/bindings.dart';
 import 'package:testapp/view/views.dart';
 
 class AppPages {
-  static const initial = Routes.homeScreen;
+  static const initial = Routes.recipeScreen;
 
   static final routes = [
     GetPage(
@@ -19,8 +19,7 @@ class AppPages {
     ),
     GetPage(
       name: Routes.recipeScreen,
-      page: () => const RecipeScreen(),
-      binding: RecipeBinding(),
+      page: () => const MainScreen(),
     ),
   ];
 }
