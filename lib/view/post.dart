@@ -12,8 +12,8 @@ class PostScreen extends GetView<PostC> {
         title: const Text('Post Retrofit'),
       ),
       body: Center(
-        child: GestureDetector(
-          onTap: () => controller.getPostData(),
+        child: ElevatedButton(
+          onPressed: () => controller.getPostData(),
           child: const Text('Post Retrofit'),
         ),
       ),
