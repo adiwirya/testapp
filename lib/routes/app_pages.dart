@@ -15,6 +15,7 @@ class AppPages {
     GetPage(
       name: Routes.postScreen,
       page: () => const PostScreen(),
+      binding: PostBinding(),
     ),
   ];
 }

@@ -12,10 +12,8 @@ class PostC extends GetxController {
   RxList<Post> items = <Post>[].obs;
   ApiClient apiClient = ApiClient(dio.Dio());
 
-  Future getPostData() async {
-    items.value = await apiClient.getPosts();
-    log(items.value.toString());
-    Get.to(Routes.homeScreen);
-    return null;
+ Future<void> getPostData() async {
+    final data = await apiClient.getPosts();
+    log(data.toString());
   }
 }
