@@ -8,9 +8,9 @@ class HomeBinding implements Bindings {
   }
 }
 
-class JsonBinding implements Bindings {
+class PostBinding implements Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<JsonC>(JsonC.new);
+    Get.lazyPut<PostC>(PostC.new);
   }
 }

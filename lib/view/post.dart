@@ -2,17 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:testapp/getx/getxs.dart';
 
-class JsonScreen extends GetView<JsonC> {
-  const JsonScreen({super.key});
+class PostScreen extends GetView<PostC> {
+  const PostScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(controller.title.value),
+        title: const Text('Post Retrofit'),
       ),
       body: const Center(
-        child: Text('Hello World'),
+        child: TextButton(
+        onPressed: () => controller.getPostData(),
+        child: Text('Click Me'),
+        ),
       ),
     );
   }

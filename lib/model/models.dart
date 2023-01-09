@@ -1,1 +1,1 @@
-export 'recipe.dart';
+export 'post.dart';

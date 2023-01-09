@@ -4,7 +4,7 @@ import 'package:testapp/routes/bindings.dart';
 import 'package:testapp/view/views.dart';
 
 class AppPages {
-  static const initial = Routes.recipeScreen;
+  static const initial = Routes.postScreen;
 
   static final routes = [
     GetPage(
@@ -13,13 +13,8 @@ class AppPages {
       binding: HomeBinding(),
     ),
     GetPage(
-      name: Routes.jsonScreen,
-      page: () => const JsonScreen(),
-      binding: JsonBinding(),
-    ),
-    GetPage(
-      name: Routes.recipeScreen,
-      page: () => const MainScreen(),
+      name: Routes.postScreen,
+      page: () => const PostScreen(),
     ),
   ];
 }
